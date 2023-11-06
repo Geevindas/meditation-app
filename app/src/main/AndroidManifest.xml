@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedApp"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:value="AIzaSyBQMXSNbj0kOGt7icx1joYry6wkuh3oi1o"></meta-data>
+
+
+        <activity
+            android:name=".register_institute"
+            android:exported="false" />
+        <activity
+            android:name=".student_signup"
+            android:exported="false" />
+        <activity
+            android:name=".student_login"
+            android:exported="false" />
+        <activity
+            android:name=".mentor_login_two"
+            android:exported="false" />
+        <activity
+            android:name=".mentor_login"
+            android:exported="false" />
+        <activity
+            android:name=".mentorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".loginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".mentorAccount"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
